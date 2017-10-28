@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2002
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "K90-MacroGen", "K90-MacroGen.csproj", "{96B6263C-7891-4AA9-98C2-F5C3027F1FDE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{96B6263C-7891-4AA9-98C2-F5C3027F1FDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96B6263C-7891-4AA9-98C2-F5C3027F1FDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96B6263C-7891-4AA9-98C2-F5C3027F1FDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96B6263C-7891-4AA9-98C2-F5C3027F1FDE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2252D637-CC8E-4235-BCED-2546009AFDA5}
+	EndGlobalSection
+EndGlobal

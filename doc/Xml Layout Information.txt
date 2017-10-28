@@ -1,0 +1,7 @@
+As many folks have realized, the config software for the K90 is pretty lame. However one can edit the exported XML profile to do things the config tool won't let you do. In my case, I wanted the G keys mapped as additional keys, not copies of keys I already have (MMO players will understand why). So I reverse engineered their XML format. It turns out they use Microsoft VK codes (which is kinda' odd - one would think they'd use USB HID codes).
+
+So use the config tool to program something onto your keys. Wherever you want F13-F24 (or whatever other key you desire but can't hit), hit F12 instead. Export the profile, then open up the XML file in your favorite editor. 
+
+In the XML file, you'll see 3 sets of 18 entries, M[0-2]_P[0-17]_foo. Mx is the profile number, Px is the key number (both zero indexed). You want to edit the giant MacroInfo tag (is it really a fixed length bitfield?! Come on, guys!). Wherever you pressed F12, you'll see 7b0001 for key down, and 7b0000 for key up. Replace 7b in those with the VK code for the key you want - F13-F24 are 7c-87 (see http://msdn.microsoft.com/en-us/libr.../ms645540.aspx). Note that many Mac apps won't work with F20 or higher - I programmed mine to be F13-F19, repeated with shift and ctrl modifiers.
+
+Save your new XML file, import it into the config tool, and save it to your keyboard. Enjoy your new keys!
